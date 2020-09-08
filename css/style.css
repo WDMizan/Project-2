@@ -1,0 +1,586 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+a,a:hover{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Aclonica', sans-serif;
+    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Piedra', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,a,p{
+    margin: 0;
+    padding: 0;
+}
+
+/*header part css start*/
+.header{
+    background-color: darkcyan;
+    height: 52px;
+}
+.header-logo a{
+    display: inline-flex;
+    line-height: 50px;
+    position: relative;
+    margin-top: 7px; 
+    transition: all linear .3s;
+    color: orange;
+    font-family: 'Piedra', cursive;
+    font-size: 40px;
+    font-weight: 400;
+    font-weight: bold;
+}
+.header-logo a:hover{
+     background-color: dodgerblue;
+    border: 1px solid  dodgerblue;
+    border-radius: 5px;
+    padding: 2px 10px;
+    color: darkmagenta;
+    transition: all linear .3s;
+}
+.primary-menu{
+/*    background-color: blueviolet;*/
+    
+}
+.primary-menu ul{
+    display: flex;
+    padding-left: 30px;
+    
+}
+.primary-menu ul li{
+    
+    padding: 0px 8px;
+    position: relative;
+}
+.primary-menu ul li a{
+    padding: 10px 18px;
+    line-height: 50px;
+    color: #fff;
+    transition: all linear .3s;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: sans-serif;
+     border: 1px solid  darkcyan;
+     border-radius: 5px;
+}
+.primary-menu ul li a:hover {
+    background-color: darkmagenta;
+    border: 1px solid  darkmagenta;
+    border-radius: 5px;
+    transition: all linear .3s;
+}
+.header-button a{
+    line-height: 50px;
+     padding: 10px 18px;
+     background-color: blueviolet;
+     border: 1px solid  dodgerblue;
+    border-radius: 5px;
+    transition: all linear .3s;
+    color: beige;
+    font-family: 'Piedra', cursive;
+    font-size: 18px;
+    font-weight: 400;
+/*    font-family: sans-serif;*/
+}
+.header-button a:hover {
+    background-color: darkorange;
+    color: red;
+    transition: all linear .3s;
+}
+.dropdown{
+    display: none;
+} 
+ 
+.primary-menu ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    left: -25px;
+    top: 50px;
+    background-color: crimson;
+    width: 260px;
+    
+    
+}
+.primary-menu ul li:hover .dropdown ul{
+    display: block;
+    
+}
+.primary-menu ul li:hover .dropdown ul li a{
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    
+}
+.sub{
+    position: relative;
+}
+.sub_menu{
+    display: none;
+}
+.sub:hover .sub_menu{
+    position: absolute;
+    display: block;
+    left: 230px;
+    top: 5px;
+    background-color: blue;
+}
+
+/*header part css end*/
+/*banner part css start*/
+.banner{
+    background: url(../Image/web.jpg);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 170px 200px;
+}
+.banner_con h4{
+    padding-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: darkmagenta;
+    padding-left: 20px;
+}
+.banner_con h3{
+    padding-bottom: 30px;
+    font-family: 'Piedra', cursive;
+    font-size: 65px;
+    font-weight: 400;
+    
+    color: red;
+}
+.himg{
+    background-color: darkcyan;
+    height: 45px;
+    width: 160px;
+    border: 1px solid #039361;
+    padding-top: 10px;
+    text-align: center;
+    transition: all linear .3s;
+    border-radius: 10px;
+    
+}
+.himg:hover {
+    background-color: darkmagenta;
+    border: 1px solid darkmagenta;
+    transition: all linear .3s;
+    color: chartreuse;
+    border-radius: 10px;
+}
+.timg{
+    background-color: darkmagenta;
+    height: 45px;
+    width: 160px;
+    border: 1px solid #039361;
+    padding-top: 10px;
+    text-align: center;
+    transition: all linear .3s;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+.timg:hover {
+    background-color: darkcyan;
+    border: 1px solid darkmagenta;
+    transition: all linear .3s;
+    border-radius: 10px;
+}
+.banner_icon{
+    display: inline-flex;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.banner_icon i{
+    color: aqua;
+    font-size: 20px;
+}
+.banner_icon a{
+    color: #f7f7b5;
+    font-family: sans-serif;
+    padding: 0px 10px;
+}
+.banner_icon a:hover {
+    color: antiquewhite;
+    transition: all linear .3s;
+}
+/*banner part css end*/
+/*app part css start*/
+.app{
+    background-color: rgba(128, 128, 128, 0.24);
+    height: 400px;
+    
+    padding-top: 40px;
+}
+.app_con h4{
+    font-size: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding: 0px 25px;
+}
+.app_con p{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding: 15px 25px;
+    color: black;
+}
+/*app part css end*/
+/*about part css start*/
+.about{
+    background-color: rgba(8, 94, 109, 0.87);
+}
+.common_head h4{
+    font-size: 50px;
+    font-family: 'Piedra', cursive;
+    font-weight: 500;
+    font-weight: bold;
+    text-align: center;
+    color: #7c0707;
+    padding-top: 40px;
+}
+.common_head p{
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: #74053d;
+    padding-top: 20px;
+}
+.card{
+    background-color: rgba(128, 128, 128, 0.4);
+    border: 1px solid rgba(8, 94, 109, 0.87);
+    transition: all linear .3s;
+    margin-bottom: 15px;
+    margin-top: 40px;
+    display: inline-flex;
+    border-radius: 10px;
+}
+.card:hover {
+    background-color: white;
+    border: 1px solid rgba(8, 94, 109, 0.87);
+    transition: all linear .3s;
+}
+.about_icon{
+    color: blue;
+    padding: 25px 25px;
+    font-size: 25px;
+    
+}
+.about_con h4{
+    padding: 25px 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: navy;
+}
+.about_con p{
+    padding: 0px 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    text-align: start;
+    padding-bottom: 30px;
+}
+/*about part css end*/
+/*team part css start*/
+.team{
+    background-color: rgba(9, 64, 118, 0.71);
+}
+.team_icon{
+    position: relative;
+    width: 270px;
+}
+.team_con h5{
+    padding: 15px 78px;
+    color: #4e031b;
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    
+}
+.team_con p{
+    padding: 0px 82px;
+    padding-bottom: 10px;
+    color: #0c046f;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+/*team part css end*/
+/*newsletter part css start*/
+.newsletter{
+    background-color: rgba(54, 78, 56, 0.9);
+    height: 330px;
+}
+.newsletter_con h6{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    padding: 40px;
+    text-align: center;
+    color: black;
+}
+.newsletter_con h5{
+    font-family: 'Piedra', cursive;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    color: navy;
+}
+.from{
+    text-align: center;
+    padding-top: 70px;
+    
+}
+.from input{
+    padding: 12px 23px;
+    border-radius: 7px;
+    border: 1px solid rgba(54, 78, 56, 0.9);
+}
+.from input:hover {
+    background-color: whitesmoke;
+    border: 2px solid rgba(0, 0, 255, 0.76);
+}
+button{
+     padding: 12px 55px;
+     border-radius: 10px;
+     margin-left: 10px;
+    background-color: navy;
+    color: #fff;
+    transition: all linear .3s;
+}
+button:hover {
+    background-color: #3c0427;
+    border: 1px solid navy;
+    color: #fff;
+    transition: all linear .3s;
+}
+/*newsletter part css end*/
+/*content part css start*/
+.content{
+    background-color: darkgrey;
+    height: 400px;
+}
+.content_con h4{
+    padding-top: 50px;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding-left: 20px;
+}
+.content_p p{
+    padding-top: 50px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding-left: 10px;
+}
+.content_icon{
+   margin-top: 50px;
+    
+    width: 278px;
+}
+.cntent_t{
+    background-color: gray;
+    height: 185px;
+    width: 255px;
+    margin-top: 50px;
+    border: 1px solid gray;
+    transition: all linear .3s;
+    border-radius: 10px;
+}
+.cntent_t:hover {
+    background-color: darkmagenta;
+    border: 1px solid darkmagenta;
+    transition: all linear .3s;
+    color: beige;
+    border-radius: 10px;
+}
+
+.cntent_t h5{
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 35px;
+    font-weight: bold;
+    color: black;
+}
+.cntent_t p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 25px;
+    
+}
+/*content part css end*/
+/*testimonial part css start*/
+.round_img img{
+    border-radius: 50%;
+    margin-left: 105px;
+     width: 140px; 
+    margin-top: 50px;
+    
+}
+.piramid{
+    height: 40px;
+    width: 40px;
+     background-color: aqua;
+    margin: -40px auto;
+    transform: rotate(45deg);
+    margin-top: 25px;
+    
+}
+.testimonial_con{
+    background-color: aqua;
+    height: 230px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.testimonial_con h5{
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 25px;
+    font-weight: bold;
+    color: black;
+}
+.testimonial_con h6{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: bold;
+    color: black;
+}
+.testimonial_con p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: lighter;
+    color: black;
+    
+    
+}
+
+/*testimonial part css end*/
+/*contact part css start*/
+.contact{
+    background-color: rgba(9, 95, 98, 0.89)
+}
+.map iframe{
+    height: 600px;
+    width: 500px;
+    margin-top: 100px;
+}
+
+.form_main{
+    height: 600px;
+    width: 500px;
+    background-image: linear-gradient(to right ,teal,green,yellow);
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all linear .3s;
+
+    
+    
+}
+
+.form_main form input{
+    height: 40px;
+    width: 260px;
+    padding: 0 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form_main form label{
+    color: #fff;
+}
+.form_main form input::placeholder{
+    color: #fff;
+}
+.form_main form label span{
+    color: #c41515;
+    font-size: 20px;
+}
+
+.form_main form button{
+    padding: 10px 25px;
+    margin-left: 90px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: teal;
+    color: #fff;
+    border-radius: 10px;
+}
+.form_main form button:hover{
+    box-shadow: 0 0 10px black;
+    transition: all linear .3s;
+}
+.form_main:hover{
+    box-shadow: 0px 0px 10px black ;
+    transition: all linear .3s;
+
+}
+.box_img img{
+    height: 400px;
+    width: 400px;
+    margin-left: 400px;
+    transform: scale(1);
+    transition: all linear .3s;
+
+}
+
+.box_img img:hover{
+    transform: scale(1);
+    transition: all linear 3s;
+    border-bottom-right-radius: 190px;
+    border-top-left-radius: 190px;
+
+}
+/*contact part css end*/
+/*footer css start*/
+.footer{
+    background-color: gray;
+}
+.footer_con p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: lighter;
+    color: #fff;
+    padding-bottom: 10px;
+}
+/*footer css end*/
